@@ -2,7 +2,7 @@ window.RGM_SELF_ASSESSMENT_DATA = {
   title: "T1-T5 Self-Assessment Hub",
   subtitle:
     "Use the original certification question bank and stage criteria to check how ready you are across Foundation, Diagnosis, Pack Design, Execution, and end-to-end certification.",
-  storageKey: "rgm-t1-t5-self-assessment-v1",
+  storageKey: "rgm-t1-t5-self-assessment-v2",
   stages: [
     {
       id: "stage-1",
@@ -422,6 +422,66 @@ window.RGM_SELF_ASSESSMENT_DATA = {
           rationale:
             "It is a prioritization tool at the end of diagnosis, not a governance or launch scorecard.",
         },
+        {
+          id: "s2q7",
+          prompt:
+            "An Affordability Index above 110 generally signals:",
+          options: {
+            A: "The current entry pack is well aligned with the market Magic Price Point",
+            B: "Meaningful affordability stress that may require intervention",
+            C: "The market has a Brand Problem rather than a Price Problem",
+            D: "The category should be solved through trade execution only",
+          },
+          answer: "B",
+          source: "Ch.2",
+          rationale:
+            "The playbook uses 110 as the threshold above which affordability pressure is meaningful enough to investigate action.",
+        },
+        {
+          id: "s2q8",
+          prompt:
+            "If category penetration and brand penetration are both low, while price stress is not evident and distribution is uneven, which problem type should be tested first?",
+          options: {
+            A: "Execution Problem",
+            B: "Price Problem",
+            C: "Magic Price Point failure",
+            D: "Cannibalization problem",
+          },
+          answer: "A",
+          source: "Ch.2",
+          rationale:
+            "When distribution or execution is visibly weak, the diagnosis should not jump straight to a pack answer before execution basics are tested.",
+        },
+        {
+          id: "s2q9",
+          prompt:
+            "Which of the following belongs to channel and occasion diagnosis rather than affordability context?",
+          options: {
+            A: "Income segments and inflation pressure",
+            B: "Daily Disposable Income benchmark",
+            C: "Consumer mission and cash-in-hand analysis",
+            D: "Magic Price Point threshold",
+          },
+          answer: "C",
+          source: "Ch.2",
+          rationale:
+            "Mission and cash-in-hand analysis are part of understanding how the consumer shops in a specific channel and occasion context.",
+        },
+        {
+          id: "s2q10",
+          prompt:
+            "The main purpose of the Go/No-Go decision logic in diagnosis is to:",
+          options: {
+            A: "Guarantee that every diagnosed gap becomes a new pack proposal",
+            B: "Decide whether the root cause should be solved by a pack or by another commercial lever",
+            C: "Set the final launch KPI targets",
+            D: "Approve the business case before pack design begins",
+          },
+          answer: "B",
+          source: "Ch.2",
+          rationale:
+            "The Go/No-Go logic protects teams from solving the wrong problem with a new pack.",
+        },
       ],
       reflections: [
         "I can distinguish a Brand Problem, Price Problem, Pack Problem, and Execution Problem using evidence.",
@@ -515,6 +575,66 @@ window.RGM_SELF_ASSESSMENT_DATA = {
           rationale:
             "The Recruitment Pack logic starts from the target transaction and works backward.",
         },
+        {
+          id: "s3q5",
+          prompt:
+            "Which of the following best reflects a sound Entry Price Point derivation?",
+          options: {
+            A: "Use the lowest price operations can produce and present that as the EPP",
+            B: "Anchor on DDI, Magic Price Point, and competitive context before selecting pack format",
+            C: "Price 10 percent below the nearest competitor and treat that as the EPP",
+            D: "Use the current pack price if distribution is already high",
+          },
+          answer: "B",
+          source: "Ch.3",
+          rationale:
+            "The playbook defines EPP from market affordability and shopper behavior, not from production convenience.",
+        },
+        {
+          id: "s3q6",
+          prompt:
+            "In the 6-Dimension Evaluation Framework, which dimension checks whether the pack can actually be supplied and supported in-market?",
+          options: {
+            A: "Brand Fit",
+            B: "Consumer Fit",
+            C: "Operational Fit",
+            D: "Occasion Fit",
+          },
+          answer: "C",
+          source: "Ch.3",
+          rationale:
+            "Operational Fit tests whether supply chain, capacity, and market execution requirements can be met.",
+        },
+        {
+          id: "s3q7",
+          prompt:
+            "What is the most important reason to include cannibalization explicitly in the Stage 3 business case?",
+          options: {
+            A: "Because all new packs should assume zero incrementality until proven otherwise",
+            B: "Because gross volume alone can overstate value if existing profitable packs are being displaced",
+            C: "Because finance requires cannibalization to exceed 30 percent for approval",
+            D: "Because cannibalization only affects modern trade economics",
+          },
+          answer: "B",
+          source: "Ch.3 / Ch.5",
+          rationale:
+            "A pack that looks strong on headline volume can still destroy value if it mostly shifts demand from a better existing pack.",
+        },
+        {
+          id: "s3q8",
+          prompt:
+            "If the strategic objective is repeat purchase among existing lighter buyers rather than first-time trial, the pack role is more likely to be:",
+          options: {
+            A: "Recruitment or Entry Pack",
+            B: "Frequency Pack",
+            C: "Execution-only intervention",
+            D: "Brand blocking pack",
+          },
+          answer: "B",
+          source: "Ch.1 / Ch.3",
+          rationale:
+            "Frequency Packs are designed to increase repeat behavior among existing consumers rather than recruit new ones.",
+        },
       ],
       reflections: [
         "I can build a business case from reach, trial, repeat, and economics instead of using top-down shortcuts.",
@@ -606,6 +726,66 @@ window.RGM_SELF_ASSESSMENT_DATA = {
           source: "Ch.4",
           rationale:
             "The early launch window is where visibility, novelty, and repeat formation are most fragile.",
+        },
+        {
+          id: "s4q5",
+          prompt:
+            "Which of the following is most clearly a pre-launch readiness item rather than a post-launch KPI?",
+          options: {
+            A: "Repeat purchase rate",
+            B: "Household penetration uplift",
+            C: "Pricing architecture and commercial policy alignment",
+            D: "Incremental NSR after 6 months",
+          },
+          answer: "C",
+          source: "Ch.4",
+          rationale:
+            "Pre-launch readiness ensures the pricing and commercial rules are aligned before the pack reaches the market.",
+        },
+        {
+          id: "s4q6",
+          prompt:
+            "Which statement best describes the sell-in to sell-out closed loop?",
+          options: {
+            A: "Once the distributor accepts the pack, the market can move immediately to scale",
+            B: "Distributor briefing, outlet compliance tracking, early-read monitoring, and corrective action are connected as one loop",
+            C: "Sell-in is owned by sales and sell-out is owned by marketing, so the loop is intentionally separate",
+            D: "The loop mainly exists to justify post-launch media spend",
+          },
+          answer: "B",
+          source: "Ch.4",
+          rationale:
+            "The playbook treats distributor readiness, outlet execution, and rapid correction as one connected operating system.",
+        },
+        {
+          id: "s4q7",
+          prompt:
+            "Which of the following is the best example of a leading KPI in the launch architecture?",
+          options: {
+            A: "Household penetration after 6 months",
+            B: "Numeric distribution and EPP compliance in the first weeks",
+            C: "Year 1 NPV",
+            D: "Long-term brand equity shift",
+          },
+          answer: "B",
+          source: "Ch.4 / Ch.5",
+          rationale:
+            "Leading KPIs are the immediate operational signals that tell the team whether the launch mechanic is functioning.",
+        },
+        {
+          id: "s4q8",
+          prompt:
+            "Why is replenishment treated as one of the Five Non-Negotiables?",
+          options: {
+            A: "Because replenishment only matters for finance reporting accuracy",
+            B: "Because a stockout during early trial can break repeat formation and waste recruitment momentum",
+            C: "Because distributors prefer larger case orders during launch",
+            D: "Because it reduces the need for POSM",
+          },
+          answer: "B",
+          source: "Ch.4",
+          rationale:
+            "If consumers trial the pack but cannot find it again, the recruitment mechanic collapses before repeat behavior forms.",
         },
       ],
       reflections: [
