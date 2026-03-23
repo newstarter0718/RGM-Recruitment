@@ -726,6 +726,10 @@ body.page-home .site-shell {
   background: rgba(255,255,255,0.92);
 }
 
+.feature-card-wide {
+  grid-column: span 2;
+}
+
 .feature-card img {
   width: 100%;
   display: block;
@@ -735,6 +739,406 @@ body.page-home .site-shell {
 
 .feature-card div {
   padding: 14px 14px 16px;
+}
+
+.home-command-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.home-hero-visual {
+  padding-bottom: 58px;
+}
+
+.hero-grid-enhanced {
+  align-items: center;
+}
+
+.hero-pill-row,
+.hero-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-pill-row {
+  margin-top: 18px;
+}
+
+.hero-action-row {
+  margin-top: 24px;
+}
+
+.hero-pill {
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-showcase {
+  position: relative;
+  min-height: 420px;
+}
+
+.hero-showcase-figure {
+  margin: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 22px 54px rgba(69, 7, 19, 0.25);
+}
+
+.hero-showcase-figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4.6;
+  object-fit: cover;
+}
+
+.hero-float-card {
+  position: absolute;
+  left: -26px;
+  bottom: 26px;
+  width: min(250px, 72%);
+  padding: 18px 18px 16px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.92);
+  color: var(--ink);
+  box-shadow: 0 18px 40px rgba(69, 7, 19, 0.22);
+}
+
+.hero-float-card.secondary {
+  left: auto;
+  right: -22px;
+  bottom: 118px;
+}
+
+.hero-float-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--coke-red-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-float-card strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: var(--coke-red-dark);
+}
+
+.hero-float-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.journey-strip {
+  margin-top: 24px;
+}
+
+.journey-strip-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.journey-ribbon {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.journey-step {
+  padding: 18px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(251,233,236,0.76));
+  border: 1px solid rgba(200,16,46,0.12);
+  box-shadow: 0 14px 40px rgba(131, 37, 49, 0.08);
+}
+
+.journey-step span {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--coke-red), var(--coke-red-dark));
+  color: var(--white);
+  font-weight: 800;
+}
+
+.journey-step strong {
+  display: block;
+  margin: 14px 0 8px;
+  color: var(--coke-red-dark);
+  font-size: 1.04rem;
+}
+
+.journey-step p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.visual-triad {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.chapter-group {
+  margin-top: 28px;
+}
+
+.chapter-group-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.chapter-group-head h2 {
+  margin: 0;
+  color: var(--coke-red-dark);
+  font-family: "Baskerville Old Face", Georgia, serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+}
+
+.chapter-group-copy {
+  max-width: 420px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.chapter-card-guide {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,240,232,0.92));
+}
+
+.chapter-card-module {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(252,232,234,0.92));
+}
+
+.chapter-card-assessment {
+  background:
+    linear-gradient(135deg, rgba(200,16,46,0.95), rgba(153,20,39,0.92)),
+    linear-gradient(180deg, rgba(255,255,255,0.06), transparent 65%);
+  color: var(--white);
+}
+
+.chapter-card-assessment span,
+.chapter-card-assessment strong,
+.chapter-card-assessment p {
+  color: inherit;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.experience-card {
+  padding: 22px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(251,233,236,0.72));
+  border: 1px solid rgba(200,16,46,0.12);
+  box-shadow: 0 18px 40px rgba(131, 37, 49, 0.08);
+}
+
+.experience-card span {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--coke-red), var(--coke-red-dark));
+  color: var(--white);
+  font-weight: 800;
+}
+
+.experience-card strong {
+  display: block;
+  margin: 14px 0 10px;
+  color: var(--coke-red-dark);
+  font-size: 1.06rem;
+}
+
+.experience-card p {
+  margin: 0;
+}
+
+.chapter-experience {
+  margin-bottom: 22px;
+  padding: 24px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(200,16,46,0.18), transparent 36%),
+    linear-gradient(180deg, rgba(255,255,255,0.97), rgba(251,233,236,0.86));
+  border: 1px solid rgba(200,16,46,0.12);
+  box-shadow: 0 18px 44px rgba(131, 37, 49, 0.08);
+}
+
+.chapter-experience-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.chapter-experience-head h3 {
+  margin: 0;
+  color: var(--coke-red-dark);
+  font-family: "Baskerville Old Face", Georgia, serif;
+  font-size: 1.7rem;
+}
+
+.chapter-experience-phase {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(200,16,46,0.1);
+  color: var(--coke-red-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.chapter-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.chapter-experience-card {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(200,16,46,0.12);
+}
+
+.chapter-experience-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--coke-red-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chapter-experience-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.chapter-experience-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.chapter-roadmap {
+  display: grid;
+  gap: 14px;
+}
+
+.chapter-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.chapter-roadmap-card {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(200,16,46,0.12);
+}
+
+.chapter-roadmap-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--coke-red-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.chapter-roadmap-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--coke-red-dark);
+  font-size: 1rem;
+}
+
+.chapter-roadmap-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.chapter-roadmap-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chapter-roadmap-links a {
+  text-decoration: none;
+}
+
+.bank-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.bank-overview-card {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(200,16,46,0.12);
+}
+
+.bank-overview-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--coke-red-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bank-overview-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--coke-red-dark);
+}
+
+.bank-overview-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .feature-card strong {
@@ -1446,18 +1850,27 @@ button.action-btn {
 
 @media (max-width: 1080px) {
   .home-intro,
+  .home-command-grid,
   .chapter-shell,
   .chapter-hero,
   .assessment-summary-grid,
   .assessment-toolbar,
   .assessment-dashboard-head,
   .result-grid,
-  .feature-grid {
+  .feature-grid,
+  .visual-triad,
+  .experience-grid {
     grid-template-columns: 1fr;
   }
 
   .assessment-toolbar,
   .assessment-dashboard-head {
+    display: grid;
+  }
+
+  .hero-grid-enhanced,
+  .chapter-group-head,
+  .chapter-experience-head {
     display: grid;
   }
 
@@ -1472,6 +1885,17 @@ button.action-btn {
 
   .profile-form {
     grid-template-columns: 1fr;
+  }
+
+  .journey-ribbon,
+  .chapter-roadmap-grid,
+  .bank-overview-grid,
+  .chapter-experience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-card-wide {
+    grid-column: auto;
   }
 }
 
@@ -1497,5 +1921,23 @@ button.action-btn {
   .assessment-card-status {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .journey-ribbon,
+  .chapter-roadmap-grid,
+  .bank-overview-grid,
+  .chapter-experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-showcase {
+    min-height: 0;
+  }
+
+  .hero-float-card,
+  .hero-float-card.secondary {
+    position: static;
+    width: 100%;
+    margin-top: 14px;
   }
 }
